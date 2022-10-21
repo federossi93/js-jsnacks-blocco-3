@@ -4,20 +4,25 @@
 
 let nomi = ["FEDERICO","marco","giacomo"]
 
-let nomiLw = nomi.map(element =>{
-    return element.toLowerCase()
+// let nomiLw = nomi.map(element =>{
+//     return element.toLowerCase()
+// })
+
+// console.log(nomiLw);
+
+// let nomiUp = nomi.map(elements =>{
+//     return elements.charAt(0).toUpperCase()
+// })
+
+let nomiLw = nomi.map(element => {
+    let minuscolo = element.toLowerCase()
+    console.log(minuscolo);
+    let primaLettera = minuscolo.charAt(0).toUpperCase()
+    console.log(primaLettera);
+    let divisione = minuscolo.slice(1)
+    console.log(divisione);
+    let unioneStr = primaLettera + divisione
+    return unioneStr
 })
 
 console.log(nomiLw);
-
-let nomiUp = nomi.map(elements =>{
-    return elements.charAt(0).toUpperCase()
-})
-
-console.log(nomiUp);
-
-//prende una porzione dellas tringas a partire dal caratter
-// da rivedere
-let comp = nomiLw.slice(1)
-
-console.log(comp);
